@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Font style */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: white; /* Default text color */
+}
+
+h1 {
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,165,0,1) 50%, rgba(0,255,0,1) 100%); /* Gradient for title */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px; /* Title font size */
+}
+
+.game-container {
+    text-align: center; /* Center content */
+    background-color: #333; /* Dark grey for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 columns */
+    grid-template-rows: repeat(3, 100px); /* 3 rows */
+    gap: 5px; /* Space between cells */
+    margin: 20px auto; /* Center the board */
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff; /* Cell background color */
+    color: white; /* Text color */
+    font-size: 36px; /* Cell font size */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 5px; /* Rounded corners for cells */
+}
+
+.cell:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+#status {
+    font-size: 24px; /* Status text size */
+    margin: 20px 0; /* Margin around status */
+    color: white; /* Default color for turn messages */
+}
+
+.win {
+    color: green; /* Color for winning messages */
+}
+
+.draw {
+    color: yellow; /* Color for draw message */
+}
+
+button {
+    font-size: 18px; /* Button font size */
+    padding: 10px 20px; /* Button padding */
+    margin-top: 10px; /* Margin above button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    background-color: #ff0022; /* Red background */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
